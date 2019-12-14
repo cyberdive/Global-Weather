@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="weatherclient\src\components\Form.tsx" />
+    <None Remove="weatherclient\src\components\Home.tsx" />
+    <None Remove="weatherclient\src\components\WeatherDetails.tsx" />
+    <None Remove="weatherclient\src\Constants.ts" />
+    <None Remove="weatherclient\src\router\index.tsx" />
+    <None Remove="weatherclient\src\types\City.ts" />
+    <None Remove="weatherclient\src\types\CityMetaData.ts" />
+    <None Remove="weatherclient\src\types\Country.ts" />
+    <None Remove="weatherclient\src\types\CurrentCondition.ts" />
+    <None Remove="weatherclient\src\types\Weather.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Weather.Persistence\Weather.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="weatherclient\src\components\Form.tsx" />
+    <TypeScriptCompile Include="weatherclient\src\components\Home.tsx" />
+    <TypeScriptCompile Include="weatherclient\src\components\WeatherDetails.tsx" />
+    <TypeScriptCompile Include="weatherclient\src\Constants.ts" />
+    <TypeScriptCompile Include="weatherclient\src\router\index.tsx" />
+    <TypeScriptCompile Include="weatherclient\src\types\City.ts" />
+    <TypeScriptCompile Include="weatherclient\src\types\CityMetaData.ts" />
+    <TypeScriptCompile Include="weatherclient\src\types\Country.ts" />
+    <TypeScriptCompile Include="weatherclient\src\types\CurrentCondition.ts" />
+    <TypeScriptCompile Include="weatherclient\src\types\Weather.ts" />
+  </ItemGroup>
+
+</Project>
